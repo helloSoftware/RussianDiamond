@@ -43,7 +43,7 @@ class ViewController: UIViewController,GameViewDelegate {
         self.addToolBar()
         
         //添加游戏界面
-        self.gameView = GameView.init(frame: CGRect.init(x: rect.origin.x + MARGIN, y: rect.origin.y + MARGIN * 2 + ToolBarHeight, width: rect.size.width - MARGIN * 2, height: rect.size.height - 80))
+        self.gameView = GameView.init(frame: CGRect.init(x: rect.origin.x + MARGIN, y: rect.origin.y + MARGIN * 2 + ToolBarHeight, width: rect.size.width - MARGIN * 2, height: rect.size.height))
         self.gameView.delegate = self
         //添加绘制游戏状态的自定义view
         self.view.addSubview(self.gameView!)

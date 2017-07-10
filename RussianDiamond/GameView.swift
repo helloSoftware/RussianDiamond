@@ -24,6 +24,8 @@ class GameView: UIView {
     let strokeWidth : Double = 1
     let baseSpeed : Double = 0.6
     
+    let changeIndex : Int = 1
+    
     var image : UIImage!
     var disPlayer : AVAudioPlayer!
     
@@ -36,14 +38,16 @@ class GameView: UIView {
     var ctx : CGContext!
     
     //建一个数组 存储颜色
-    let colors = [UIColor.brown.cgColor,
+    let colors = [UIColor.white.cgColor,
+                  UIColor.brown.cgColor,
                   UIColor.red.cgColor,
                   UIColor.gray.cgColor,
                   UIColor.green.cgColor,
                   UIColor.blue.cgColor,
                   UIColor.yellow.cgColor,
                   UIColor.magenta.cgColor,
-                  UIColor.purple.cgColor
+                  UIColor.purple.cgColor,
+                  UIColor.orange.cgColor
     ]
     //定义集中可能出现的方块的组合
     var blockArr = [[Block]]()
@@ -52,19 +56,46 @@ class GameView: UIView {
     var tetris_status = [[Int32]]()
     
     var currentFall = [Block]()
+    var cacheFall = [Block]()
     
-    func initFallBlock() {
+    func initWithCacheBlock() {
         //生成随机数
         let rand = Int(arc4random()) % blockArr.count
         print("rand === \(rand)");
-        currentFall = blockArr[rand]
+        cacheFall = blockArr[rand]
+        for i:Int in 0..<cacheFall.count {
+            let cur = cacheFall[i]
+            ctx.setFillColor(colors[cur.color])
+            ctx.fill(CGRect.init(x: Double((cur.x - 5) * cellSize!)+strokeWidth, y: Double((tetrisRows + cur.y + 1) * cellSize!) + strokeWidth, width: Double(cellSize!) - strokeWidth * 2, height: Double(cellSize!) - strokeWidth * 2))
+        }
+        image = UIGraphicsGetImageFromCurrentImageContext()
+        self.setNeedsDisplay()
+
+    }
+    
+    func initFallBlock() {
+//        //生成随机数
+//        let rand = Int(arc4random()) % blockArr.count
+//        print("rand === \(rand)");
+//        currentFall = blockArr[rand]
+        
+        if cacheFall.count == 0 {
+            self.initWithCacheBlock()
+        }
+        
+        currentFall = cacheFall
         for i:Int in 0..<currentFall.count {
             let cur = currentFall[i]
             ctx.setFillColor(colors[cur.color])
             ctx.fill(CGRect.init(x: Double(cur.x * cellSize!)+strokeWidth, y: Double(cur.y*cellSize!) + strokeWidth, width: Double(cellSize!) - strokeWidth * 2, height: Double(cellSize!) - strokeWidth * 2))
+            tetris_status[cur.x][cur.y] = 0
+            
+            ctx.clear(CGRect.init(x: Double((cur.x - 5) * cellSize!)+strokeWidth, y: Double((tetrisRows + cur.y + 1) * cellSize!) + strokeWidth, width: Double(cellSize!) - strokeWidth * 2, height: Double(cellSize!) - strokeWidth * 2))
+
         }
         image = UIGraphicsGetImageFromCurrentImageContext()
         self.setNeedsDisplay()
+        self.initWithCacheBlock()
     }
     
     //初始化游戏状态
@@ -73,6 +104,11 @@ class GameView: UIView {
         tetris_status = Array.init(repeating: tmpRow, count: tetrisRows)
         
         self.blockArr = [
+            //一个方块
+            [Block(x:tetrisCol/2 - 1,y:0,color:8)],
+            //两个方块
+            [Block(x:tetrisCol/2 - 1,y:0,color:9),
+             Block(x:tetrisCol/2,y:0,color:9)],
             //组合 Z
             [Block(x:tetrisCol/2 - 1,y:0,color:1),
              Block(x:tetrisCol/2,y:0,color:1),
@@ -363,11 +399,16 @@ class GameView: UIView {
             let preY = currentFall[i].y
             //始终以第三个方块作为旋转的中心
             //i == 2时，说明是旋转的中心
-            if i != 2{
+            
+            if currentFall.count == 1 {
+                return
+            }
+            
+            if i != changeIndex{
                 
                 //计算方块旋转之后的坐标
-                let afterX = currentFall[2].x + preY - currentFall[2].y
-                let afterY = currentFall[2].y + currentFall[2].x - preX
+                let afterX = currentFall[changeIndex].x + preY - currentFall[changeIndex].y
+                let afterY = currentFall[changeIndex].y + currentFall[changeIndex].x - preX
                 //如果旋转后的 x , y坐标越界，或者旋转后的位置已经有了方块，不能旋转
                 if  afterY < 0 ||
                     afterX < 0 ||
@@ -391,9 +432,9 @@ class GameView: UIView {
                 let preX = currentFall[i].x
                 let preY = currentFall[i].y
                 //计算方块旋转之后的坐标
-                if i != 2 {
-                    let afterX = currentFall[2].x + preY - currentFall[2].y
-                    let afterY = currentFall[2].y + currentFall[2].x - preX
+                if i != changeIndex {
+                    let afterX = currentFall[changeIndex].x + preY - currentFall[changeIndex].y
+                    let afterY = currentFall[changeIndex].y + currentFall[changeIndex].x - preX
                     currentFall[i].x = afterX
                     currentFall[i].y = afterY
                 }
