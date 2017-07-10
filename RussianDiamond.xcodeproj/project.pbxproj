@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		550C80F71F0B769300F7742D /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550C80F61F0B769300F7742D /* Block.swift */; };
+		550F22231F0F2AB900461D12 /* five Hundred miles.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 550F22221F0F2AB900461D12 /* five Hundred miles.mp3 */; };
+		55148ADD1F0A1A13003E7760 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55148ADC1F0A1A13003E7760 /* AppDelegate.swift */; };
+		55148ADF1F0A1A13003E7760 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55148ADE1F0A1A13003E7760 /* ViewController.swift */; };
+		55148AE21F0A1A13003E7760 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55148AE01F0A1A13003E7760 /* Main.storyboard */; };
+		55148AE41F0A1A13003E7760 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55148AE31F0A1A13003E7760 /* Assets.xcassets */; };
+		55148AE71F0A1A13003E7760 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55148AE51F0A1A13003E7760 /* LaunchScreen.storyboard */; };
+		55148AF21F0A1A14003E7760 /* RussianDiamondTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55148AF11F0A1A14003E7760 /* RussianDiamondTests.swift */; };
+		55148AFD1F0A1A14003E7760 /* RussianDiamondUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55148AFC1F0A1A14003E7760 /* RussianDiamondUITests.swift */; };
+		55148B0C1F0A2C7D003E7760 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55148B0B1F0A2C7D003E7760 /* GameView.swift */; };
+		55148B101F0A6A89003E7760 /* dis.wav in Resources */ = {isa = PBXBuildFile; fileRef = 55148B0F1F0A6A89003E7760 /* dis.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		55148AEE1F0A1A14003E7760 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55148AD11F0A1A13003E7760 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55148AD81F0A1A13003E7760;
+			remoteInfo = RussianDiamond;
+		};
+		55148AF91F0A1A14003E7760 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55148AD11F0A1A13003E7760 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55148AD81F0A1A13003E7760;
+			remoteInfo = RussianDiamond;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		550C80F61F0B769300F7742D /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		550F22221F0F2AB900461D12 /* five Hundred miles.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "five Hundred miles.mp3"; sourceTree = "<group>"; };
+		55148AD91F0A1A13003E7760 /* RussianDiamond.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RussianDiamond.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55148ADC1F0A1A13003E7760 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		55148ADE1F0A1A13003E7760 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		55148AE11F0A1A13003E7760 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		55148AE31F0A1A13003E7760 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55148AE61F0A1A13003E7760 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		55148AE81F0A1A14003E7760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55148AED1F0A1A14003E7760 /* RussianDiamondTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RussianDiamondTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55148AF11F0A1A14003E7760 /* RussianDiamondTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RussianDiamondTests.swift; sourceTree = "<group>"; };
+		55148AF31F0A1A14003E7760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55148AF81F0A1A14003E7760 /* RussianDiamondUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RussianDiamondUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55148AFC1F0A1A14003E7760 /* RussianDiamondUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RussianDiamondUITests.swift; sourceTree = "<group>"; };
+		55148AFE1F0A1A14003E7760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55148B0A1F0A1DDA003E7760 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		55148B0B1F0A2C7D003E7760 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		55148B0F1F0A6A89003E7760 /* dis.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dis.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55148AD61F0A1A13003E7760 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55148AEA1F0A1A14003E7760 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55148AF51F0A1A14003E7760 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55148AD01F0A1A13003E7760 = {
+			isa = PBXGroup;
+			children = (
+				55148ADB1F0A1A13003E7760 /* RussianDiamond */,
+				55148AF01F0A1A14003E7760 /* RussianDiamondTests */,
+				55148AFB1F0A1A14003E7760 /* RussianDiamondUITests */,
+				55148ADA1F0A1A13003E7760 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		55148ADA1F0A1A13003E7760 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55148AD91F0A1A13003E7760 /* RussianDiamond.app */,
+				55148AED1F0A1A14003E7760 /* RussianDiamondTests.xctest */,
+				55148AF81F0A1A14003E7760 /* RussianDiamondUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55148ADB1F0A1A13003E7760 /* RussianDiamond */ = {
+			isa = PBXGroup;
+			children = (
+				55148ADC1F0A1A13003E7760 /* AppDelegate.swift */,
+				55148ADE1F0A1A13003E7760 /* ViewController.swift */,
+				55148B0B1F0A2C7D003E7760 /* GameView.swift */,
+				550C80F61F0B769300F7742D /* Block.swift */,
+				55148B0A1F0A1DDA003E7760 /* MyPlayground.playground */,
+				55148AE01F0A1A13003E7760 /* Main.storyboard */,
+				55148AE31F0A1A13003E7760 /* Assets.xcassets */,
+				55148AE51F0A1A13003E7760 /* LaunchScreen.storyboard */,
+				55148AE81F0A1A14003E7760 /* Info.plist */,
+				550F22221F0F2AB900461D12 /* five Hundred miles.mp3 */,
+				55148B0F1F0A6A89003E7760 /* dis.wav */,
+			);
+			path = RussianDiamond;
+			sourceTree = "<group>";
+		};
+		55148AF01F0A1A14003E7760 /* RussianDiamondTests */ = {
+			isa = PBXGroup;
+			children = (
+				55148AF11F0A1A14003E7760 /* RussianDiamondTests.swift */,
+				55148AF31F0A1A14003E7760 /* Info.plist */,
+			);
+			path = RussianDiamondTests;
+			sourceTree = "<group>";
+		};
+		55148AFB1F0A1A14003E7760 /* RussianDiamondUITests */ = {
+			isa = PBXGroup;
+			children = (
+				55148AFC1F0A1A14003E7760 /* RussianDiamondUITests.swift */,
+				55148AFE1F0A1A14003E7760 /* Info.plist */,
+			);
+			path = RussianDiamondUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55148AD81F0A1A13003E7760 /* RussianDiamond */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55148B011F0A1A14003E7760 /* Build configuration list for PBXNativeTarget "RussianDiamond" */;
+			buildPhases = (
+				55148AD51F0A1A13003E7760 /* Sources */,
+				55148AD61F0A1A13003E7760 /* Frameworks */,
+				55148AD71F0A1A13003E7760 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RussianDiamond;
+			productName = RussianDiamond;
+			productReference = 55148AD91F0A1A13003E7760 /* RussianDiamond.app */;
+			productType = "com.apple.product-type.application";
+		};
+		55148AEC1F0A1A14003E7760 /* RussianDiamondTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55148B041F0A1A14003E7760 /* Build configuration list for PBXNativeTarget "RussianDiamondTests" */;
+			buildPhases = (
+				55148AE91F0A1A14003E7760 /* Sources */,
+				55148AEA1F0A1A14003E7760 /* Frameworks */,
+				55148AEB1F0A1A14003E7760 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55148AEF1F0A1A14003E7760 /* PBXTargetDependency */,
+			);
+			name = RussianDiamondTests;
+			productName = RussianDiamondTests;
+			productReference = 55148AED1F0A1A14003E7760 /* RussianDiamondTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		55148AF71F0A1A14003E7760 /* RussianDiamondUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55148B071F0A1A14003E7760 /* Build configuration list for PBXNativeTarget "RussianDiamondUITests" */;
+			buildPhases = (
+				55148AF41F0A1A14003E7760 /* Sources */,
+				55148AF51F0A1A14003E7760 /* Frameworks */,
+				55148AF61F0A1A14003E7760 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55148AFA1F0A1A14003E7760 /* PBXTargetDependency */,
+			);
+			name = RussianDiamondUITests;
+			productName = RussianDiamondUITests;
+			productReference = 55148AF81F0A1A14003E7760 /* RussianDiamondUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55148AD11F0A1A13003E7760 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = poplar;
+				TargetAttributes = {
+					55148AD81F0A1A13003E7760 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = TSUV32LBHT;
+						ProvisioningStyle = Automatic;
+					};
+					55148AEC1F0A1A14003E7760 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 55148AD81F0A1A13003E7760;
+					};
+					55148AF71F0A1A14003E7760 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 55148AD81F0A1A13003E7760;
+					};
+				};
+			};
+			buildConfigurationList = 55148AD41F0A1A13003E7760 /* Build configuration list for PBXProject "RussianDiamond" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55148AD01F0A1A13003E7760;
+			productRefGroup = 55148ADA1F0A1A13003E7760 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55148AD81F0A1A13003E7760 /* RussianDiamond */,
+				55148AEC1F0A1A14003E7760 /* RussianDiamondTests */,
+				55148AF71F0A1A14003E7760 /* RussianDiamondUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55148AD71F0A1A13003E7760 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55148AE71F0A1A13003E7760 /* LaunchScreen.storyboard in Resources */,
+				55148AE41F0A1A13003E7760 /* Assets.xcassets in Resources */,
+				55148AE21F0A1A13003E7760 /* Main.storyboard in Resources */,
+				550F22231F0F2AB900461D12 /* five Hundred miles.mp3 in Resources */,
+				55148B101F0A6A89003E7760 /* dis.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55148AEB1F0A1A14003E7760 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55148AF61F0A1A14003E7760 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55148AD51F0A1A13003E7760 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55148ADF1F0A1A13003E7760 /* ViewController.swift in Sources */,
+				550C80F71F0B769300F7742D /* Block.swift in Sources */,
+				55148B0C1F0A2C7D003E7760 /* GameView.swift in Sources */,
+				55148ADD1F0A1A13003E7760 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55148AE91F0A1A14003E7760 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55148AF21F0A1A14003E7760 /* RussianDiamondTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55148AF41F0A1A14003E7760 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55148AFD1F0A1A14003E7760 /* RussianDiamondUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55148AEF1F0A1A14003E7760 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55148AD81F0A1A13003E7760 /* RussianDiamond */;
+			targetProxy = 55148AEE1F0A1A14003E7760 /* PBXContainerItemProxy */;
+		};
+		55148AFA1F0A1A14003E7760 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55148AD81F0A1A13003E7760 /* RussianDiamond */;
+			targetProxy = 55148AF91F0A1A14003E7760 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		55148AE01F0A1A13003E7760 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55148AE11F0A1A13003E7760 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		55148AE51F0A1A13003E7760 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55148AE61F0A1A13003E7760 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		55148AFF1F0A1A14003E7760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		55148B001F0A1A14003E7760 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		55148B021F0A1A14003E7760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TSUV32LBHT;
+				INFOPLIST_FILE = RussianDiamond/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = poplar.RussianDiamond;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		55148B031F0A1A14003E7760 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TSUV32LBHT;
+				INFOPLIST_FILE = RussianDiamond/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = poplar.RussianDiamond;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		55148B051F0A1A14003E7760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RussianDiamondTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = poplar.RussianDiamondTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RussianDiamond.app/RussianDiamond";
+			};
+			name = Debug;
+		};
+		55148B061F0A1A14003E7760 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RussianDiamondTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = poplar.RussianDiamondTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RussianDiamond.app/RussianDiamond";
+			};
+			name = Release;
+		};
+		55148B081F0A1A14003E7760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = RussianDiamondUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = poplar.RussianDiamondUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RussianDiamond;
+			};
+			name = Debug;
+		};
+		55148B091F0A1A14003E7760 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = RussianDiamondUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = poplar.RussianDiamondUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RussianDiamond;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55148AD41F0A1A13003E7760 /* Build configuration list for PBXProject "RussianDiamond" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55148AFF1F0A1A14003E7760 /* Debug */,
+				55148B001F0A1A14003E7760 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55148B011F0A1A14003E7760 /* Build configuration list for PBXNativeTarget "RussianDiamond" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55148B021F0A1A14003E7760 /* Debug */,
+				55148B031F0A1A14003E7760 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55148B041F0A1A14003E7760 /* Build configuration list for PBXNativeTarget "RussianDiamondTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55148B051F0A1A14003E7760 /* Debug */,
+				55148B061F0A1A14003E7760 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55148B071F0A1A14003E7760 /* Build configuration list for PBXNativeTarget "RussianDiamondUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55148B081F0A1A14003E7760 /* Debug */,
+				55148B091F0A1A14003E7760 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55148AD11F0A1A13003E7760 /* Project object */;
+}
